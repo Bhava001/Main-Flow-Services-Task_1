@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: skyblue;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background: pink;
+            padding: 10px;
+            list-style: none;
+            top: 100%;
+            left: 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li a {
+            color: rgb(56, 43, 245);
+            display: block;
+            padding: 5px 10px;
+        }
+        .footer {
+            background: #222; 
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    </style>
+</head>
+<body>
+    <h1 style="background-color: blue;"><center>Shopsy</center></h1>
+    <nav>
+        <header>
+    <ul>
+        <li> <a href="home">Home</a></li>
+        <li> <a href="Categories">Categories</a>
+         <ul>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Clothes</a></li>
+            <li><a href="#">Cosmetics</a></li>
+            <li><a href="#">Groceries</a></li>
+            <li><a href="#">Toys</a></li>
+         </ul>
+         </li>
+        <li> <a href="myorder">My Order</a></li>
+        <li> <a href="Contacts">Contacts</a></li>
+        <li> <a href="About us">About Us</a></li>
+        <li><a href="#">Login/SignUp</a>
+        <ul> 
+            <li><a href="#">Login</a></li>
+            <li><a href="#">SignUp</a></li>
+        </ul>
+        </li>
+    </ul>
+        </header>
+    </nav>
+    <section>
+        <center>
+            <h2>Our Features</h2>
+            <p>Explore our new offerings and Unique Collections</p>
+        </center>
+    </section>
+    <img src="shopping.jpg" class="center">
+
+ <footer class="footer">
+            <p>&copy; 2025 My Website | Privacy Policy | Terms of Service</p>
+        </footer>
+</body>
+    
+</html>
